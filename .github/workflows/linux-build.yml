@@ -90,3 +90,7 @@ jobs:
       run: |
         cd .build && ctest -C $BUILD_CONFIG -V
 
+    - name: Install
+      run: |
+        DESTDIR=$RUNNER_TEMP cmake --install .build --verbose
+
