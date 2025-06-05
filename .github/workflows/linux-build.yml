@@ -26,7 +26,7 @@ jobs:
       fail-fast: false
       max-parallel: 8
       matrix:
-        compiler: [g++-9, g++-10, g++-11, clang++-12, clang++-13, clang++-14]
+        compiler: [g++-9, g++-10, g++-11, clang++-14, clang++-15, clang++-16]
         base-flags: ["", -DJINJA2CPP_CXX_STANDARD=17]
         build-config: [Release, Debug]
         build-shared: [TRUE, FALSE]
