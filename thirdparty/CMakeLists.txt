@@ -62,7 +62,8 @@ if(JINJA2CPP_BUILD_TESTS)
         FetchContent_Declare(
             googletest
             GIT_REPOSITORY https://github.com/google/googletest.git
-            GIT_TAG main
+            GIT_TAG v1.16.0 # After 1.16, GTest enforce c++17 which conflict with
+                            # current c++14 default language level
         )
         FetchContent_MakeAvailable(googletest)
     endif()
